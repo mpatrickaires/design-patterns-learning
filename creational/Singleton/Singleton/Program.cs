@@ -36,7 +36,7 @@ Separator();
  * instance (GetInstance) always returns the already created instance, which shares the state
  * whenever its changed or used.
  * A problem with Singleton is that it's not possible to use an interface instead of a
- * concrete implementation due to the use of static methos. This can, however, be resolved with
+ * concrete implementation due to the use of static methods. This can, however, be resolved with
  * the use of a different approach called Monostate.
  */
 
