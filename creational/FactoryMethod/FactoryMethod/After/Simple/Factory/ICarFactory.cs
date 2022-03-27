@@ -1,10 +1,5 @@
-﻿using FactoryMethod.Enum;
-using FactoryMethod.Cars;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using FactoryMethod.Cars;
+using FactoryMethod.Enum;
 
 namespace FactoryMethod.After.Simple.Factory
 {

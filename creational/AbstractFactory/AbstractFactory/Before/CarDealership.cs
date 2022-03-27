@@ -1,11 +1,6 @@
-﻿using AbstractFactory.Cars;
+﻿using AbstractFactory.Before.Factory;
+using AbstractFactory.Cars;
 using AbstractFactory.Enum;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AbstractFactory.Before.Factory;
 
 namespace AbstractFactory.Before
 {

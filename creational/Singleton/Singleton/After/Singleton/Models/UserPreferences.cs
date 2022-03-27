@@ -1,9 +1,4 @@
 ﻿using Singleton.Enums;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Singleton.After.Singleton.Models
 {
@@ -13,7 +8,7 @@ namespace Singleton.After.Singleton.Models
 
         // It can also be created like that if the language supports:
         // private static UserPreferences _instance = new UserPreferences(); 
-        
+
         public Theme Theme { get; set; }
         public int FontSize { get; set; }
 
@@ -28,7 +23,7 @@ namespace Singleton.After.Singleton.Models
         {
             if (_instance == null)
             {
-                _instance = new UserPreferences();  
+                _instance = new UserPreferences();
             }
 
             return _instance;
