@@ -1,4 +1,4 @@
-﻿using AbstractFactory.After.AbstractFactory;
+﻿using AbstractFactory.After;
 using AbstractFactory.Before;
 
 static void Separate()
