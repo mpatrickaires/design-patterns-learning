@@ -15,6 +15,8 @@ namespace Adapter.After.ClassAdapter
     {
         public static void Run()
         {
+            Console.WriteLine("== After - Class Adapter ==");
+
             var xmlData = UsDollarExchangeProvider.GetDollarExchange();
 
             XmlDataToJsonDataAdapter adapter = new XmlDataToJsonDataAdapter(xmlData.GetXmlData());

@@ -1,4 +1,5 @@
 ﻿using Adapter.After.ClassAdapter;
+using Adapter.After.Hexagonal;
 using Adapter.After.ObjectAdapter;
 using Adapter.Before;
 
@@ -18,3 +19,7 @@ ClientObjectAdapter.Run();
 Separator();
 
 ClientClassAdapter.Run();
+
+Separator();
+
+ClientHexagonal.Run();
