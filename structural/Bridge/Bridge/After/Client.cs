@@ -16,7 +16,7 @@ using Bridge.After.Models.Platforms.Interfaces;
  * implements the application expected interface and then send this object via DI.
  */
 
-namespace Bridge.Before
+namespace Bridge.After
 {
     public static class ClientAfter
     {
