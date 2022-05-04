@@ -2,33 +2,37 @@
 {
     public class FlyweightParticle
     {
-        public Guid Id { get; }
-        public string Name { get; }
-        public string Sprite { get; }
-        public string Color { get; }
+        private readonly Guid _id;
+        private readonly string _name;
+        private readonly string _sprite;
+        private readonly string _color;
+        public Guid Id => _id;
+        public string Name => _name;
+        public string Sprite => _sprite;
+        public string Color => _color;
 
         public FlyweightParticle(string name, string sprite, string color)
         {
-            Id = Guid.NewGuid();
-            Name = name;
-            Sprite = sprite;
-            Color = color;
+            _id = Guid.NewGuid();
+            _name = name;
+            _sprite = sprite;
+            _color = color;
         }
 
         public bool Equals(string name, string sprite, string color)
         {
-            return Name == name &&
-                Sprite == sprite &&
-                Color == color;
+            return _name == name &&
+                _sprite == sprite &&
+                _color == color;
         }
 
         public void Draw(int coordinateX, int coordinateY, int speed)
         {
             Console.WriteLine($"Intrinsic State (immutable):");
-            Console.WriteLine($"   - Id: {Id}");
-            Console.WriteLine($"   - Name: {Name}");
-            Console.WriteLine($"   - Sprite: {Sprite}");
-            Console.WriteLine($"   - Color: {Color}");
+            Console.WriteLine($"   - Id: {_id}");
+            Console.WriteLine($"   - Name: {_name}");
+            Console.WriteLine($"   - Sprite: {_sprite}");
+            Console.WriteLine($"   - Color: {_color}");
             Console.WriteLine($"Speed: {speed}");
             Console.WriteLine($"Coordinates: ({coordinateX}, {coordinateY})");
             Console.WriteLine();
