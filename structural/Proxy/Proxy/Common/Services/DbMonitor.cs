@@ -8,7 +8,7 @@ namespace Proxy.Common.Services
 
         public DbMonitor()
         {
-            Console.Write("Etablishing connection to database");
+            Console.Write("Establishing connection to database");
             var seconds = 0;
             while (true)
             {

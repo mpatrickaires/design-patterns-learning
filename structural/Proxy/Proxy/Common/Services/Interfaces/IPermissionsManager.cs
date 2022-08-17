@@ -2,7 +2,7 @@
 {
     public interface IPermissionsManager
     {
-        void GrantAdminPermissions(string userName);
-        void RevokeAdminPermissions(string userName);
+        void GrantAdminPermissions(string user);
+        void RevokeAdminPermissions(string user);
     }
 }
