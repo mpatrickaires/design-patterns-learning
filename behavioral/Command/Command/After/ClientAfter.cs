@@ -3,6 +3,12 @@ using Command.After.Commands;
 using Command.After.Commands.Interfaces;
 using Command.Common;
 
+/*
+ * Now we have a much better implementation, let's understand it.
+ * First, we created a single class of button, which will now be concrete and will have a click method
+ * implemented
+ */
+
 namespace Command.After
 {
     public static class ClientAfter
