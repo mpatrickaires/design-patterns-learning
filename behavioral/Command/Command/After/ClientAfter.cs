@@ -6,7 +6,15 @@ using Command.Common;
 /*
  * Now we have a much better implementation, let's understand it.
  * First, we created a single class of button, which will now be concrete and will have a click method
- * implemented
+ * implemented. Now, this click method will not actually do anything, it will only call the method 'Execute' of the interface ICommand; the 
+ * concrete implementation of that interface is received externally by inversion of control.
+ * The purpose of the command is actually pretty simple: it will be called by an invoker and (in most of the cases) will simple call a wrapped 
+ * receiver. It is basically the transformation of a request into an entirely new object.
+ * This creates some advantages, such as the creation of an additional layer beteween the invoker and the receiver, the ability to treat the 
+ * requests in a sort of lazy evaluation and to queue them in some storage, and also the possibility of serializing this object to keep in a 
+ * database or even to send it through a network.
+ * Another great point is that this command can also implement a undo method, which will basically revert what was performed by its execution 
+ * method, that way we can keep track of what was executed and also undo it at anytime.
  */
 
 namespace Command.After
