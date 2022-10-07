@@ -6,7 +6,7 @@ namespace Iterator.After.Iterators.Interfaces
     {
         User Current();
         User Next();
-        bool IsDone();
+        bool HasMore();
 
     }
 }

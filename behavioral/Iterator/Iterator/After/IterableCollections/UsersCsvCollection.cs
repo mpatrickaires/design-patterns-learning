@@ -1,4 +1,5 @@
 ﻿using Iterator.After.IterableCollections.Interfaces;
+using Iterator.After.Iterators;
 using Iterator.After.Iterators.Interfaces;
 
 namespace Iterator.After.IterableCollections
@@ -16,9 +17,6 @@ namespace Iterator.After.IterableCollections
 
         public string this[int index] => _lines[index];
 
-        public IUsersIterator CreateIterator()
-        {
-            throw new NotImplementedException();
-        }
+        public IUsersIterator CreateIterator() => new UsersCsvIterator(this);
     }
 }

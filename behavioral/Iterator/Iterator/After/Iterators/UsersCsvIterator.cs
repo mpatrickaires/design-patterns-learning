@@ -22,13 +22,12 @@ namespace Iterator.After.Iterators
             return _userCache;
         }
 
-        public bool IsDone() => _index > _collection.Length();
+        public bool HasMore() => _index < _collection.Length();
 
         public User Next()
         {
-            if (!IsDone()) return null;
-
             _index += 1;
+            if (!HasMore()) return null;
             _userCache = GetUserFromLine(_collection[_index]);
 
             return _userCache;
