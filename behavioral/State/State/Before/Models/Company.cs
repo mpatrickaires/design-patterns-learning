@@ -18,22 +18,22 @@
             {
                 if (_numberOfEmployees > 0)
                 {
-                    tax = 0.05M;
+                    tax = 0.05m;
                 }
                 else
                 {
-                    tax = 0.1M;
+                    tax = 0.1m;
                 }
             }
             else
             {
                 if (_numberOfEmployees > 1)
                 {
-                    tax = 0.1M;
+                    tax = 0.1m;
                 }
                 else
                 {
-                    tax = 0.2M;
+                    tax = 0.2m;
                 }
             }
 
@@ -58,22 +58,22 @@
             {
                 if (_numberOfEmployees > 0)
                 {
-                    tax = 0M;
+                    tax = 0m;
                 }
                 else
                 {
-                    tax = 0.05M;
+                    tax = 0.05m;
                 }
             }
             else
             {
                 if (_numberOfEmployees > 1)
                 {
-                    tax = 0.15M;
+                    tax = 0.15m;
                 }
                 else
                 {
-                    tax = 0.25M;
+                    tax = 0.25m;
                 }
             }
 
@@ -112,7 +112,7 @@
                 _numberOfEmployees++;
             }
 
-            Console.WriteLine($"New employee hired! [Number of Employees: {_numberOfEmployees}]");
+            Console.WriteLine($"New employee hired! [ Number of Employees: {_numberOfEmployees} ]");
             Console.WriteLine();
         }
     }
