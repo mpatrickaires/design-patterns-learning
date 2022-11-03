@@ -21,6 +21,8 @@ namespace State.Before
     {
         public static void Run()
         {
+            Console.WriteLine("== Before ==");
+
             var company = new Company();
 
             company.ReceiveEarnings(50);

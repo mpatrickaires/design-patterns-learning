@@ -23,6 +23,8 @@ namespace State.After
     {
         public static void Run()
         {
+            Console.WriteLine("== After ==");
+
             var company = new Company();
 
             company.ReceiveEarnings(50);
