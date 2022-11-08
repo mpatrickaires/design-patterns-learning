@@ -1,0 +1,38 @@
+[
+    {
+        "name": "John",
+        "email": "john@email.com",
+        "country": 1,
+        "premium": true
+    },
+    {
+        "name": "Anne",
+        "email": "anne@email.com",
+        "country": 1,
+        "premium": true
+    },
+    {
+        "name": "Bob",
+        "email": "bob@email.com",
+        "country": 1,
+        "premium": false
+    },
+    {
+        "name": "Jorge",
+        "email": "jorge@email.com",
+        "country": 2,
+        "premium": false
+    },
+    {
+        "name": "Pedro",
+        "email": "pedro@email.com",
+        "country": 2,
+        "premium": true
+    },
+    {
+        "name": "Santiago",
+        "email": "santiago@email.com",
+        "country": 3,
+        "premium": false
+    }
+]
